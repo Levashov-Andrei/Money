@@ -7,9 +7,9 @@ public class Vacationmoney {
         for (int month = 0; month < 12; month++) {
             if (money >= threshold) { // можем ли отдыхать?
                 count++; // увеличиваем счётчик месяцев отдыха
-                money = (money - expenses) - expenses-expenses-expenses;
+                money = (money - expenses)/3;
             } else {
-                money = money + income;
+                money = money + income -expenses;
             }
         }
         return count;
